@@ -1,8 +1,8 @@
 //Importamos Super Clase
-const{ Maestro } = require('./Maestro').default;
+const{ Maestro } = require('./Maestro');
 
 class MFisica extends Maestro{
-    constructor(antiguedad){
+    constructor(materia, promedioGrupo, antiguedad, ){
         console.log("Se creo el Maestro de Física");
         super(materia, promedioGrupo);
         this.antiguedad = antiguedad;
