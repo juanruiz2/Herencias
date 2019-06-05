@@ -12,16 +12,15 @@ class Maestro{
 
 
     getPromedioGrupo(){
-        for (let i = 0; i < promedioGrupo.length; i++) {
-            let promedioGrupo = 0;
-            let sumaPromedioGrupo = 0;
-            promedioGrupo += promedioGrupo[i];
-            let promedioGrupo = sumaPromedioGrupo / promedioGrupo.length;
+        let sumaTotal = 0;
+
+        for (let i = 0; i < this.promedioGrupo.length; i++) {
+            sumaTotal += this.promedioGrupo[i];
         }
   
-        return this.promedioGrupo;
+        return (sumaTotal/this.promedioGrupo.length);
     }
 }
 
-module.exports = {Maestro,}
+module.exports = { Maestro,} 
 

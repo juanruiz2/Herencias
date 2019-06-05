@@ -1,10 +1,10 @@
 //Importamos Super Clase
-const{ Maestro } = require('./Maestro').default;
+const{ Maestro } = require('./Maestro');
 
 class MMusica extends Maestro{
-    constructor(edad){
+    constructor(m, p, edad){
         console.log("Se creo el Maestro de Música");
-        super(materia, promedioGrupo);
+        super(m, p);
         this.edad = edad;
     }
 getEdad(){
